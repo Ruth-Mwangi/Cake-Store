@@ -1,12 +1,16 @@
 var item;
 var noOfItems=0;
+var total=0;
+var itemValue;
 $(document).ready(function(){
 
     $(".card a").click(function(e){
         e.preventDefault();
-        $(".cart-items").prepend('<li>' + item+'</li>');
+        $(".cart-items").prepend('<li data-value="'+itemValue+'">' + item+' : '+itemValue+'</li>');
         noOfItems=noOfItems+1;
+        total=total+itemValue;
         $(".number").text(noOfItems)
+        $(".total").text("Your total is : "+total);
     })
 
 
@@ -21,15 +25,35 @@ $(document).ready(function(){
         
 
     })
+    $("#checkout").click(function(){
+        if (total===0){
+            alert("No items in cart");
+            return;
+        }
+        alert("Thank You! Enjoy!!")
+        total=0;
+        noOfItems=0;
+        $(".cart-items li").remove();
+        $(".total").text('');
+
+    })
     $("#clear").click(function(){
         $(".cart-items li").remove();
         noOfItems=0
+        total=0;
         $(".number").text(noOfItems)
+        $(".total").text('');
     });
     $(".cart-items").on('click','li',function(){
          $(this).remove();
+         var del=parseInt($(this).attr('data-value'));
          noOfItems=noOfItems-1;
+         total=total-del;
          $(".number").text(noOfItems)
+         if(total===0){
+            $(".total").text("");
+         }else
+         $(".total").text("Your total is : "+total);
     })
 
 
@@ -41,11 +65,13 @@ $(document).ready(function(){
         $(this).children(".card-img-overlay").fadeToggle("fast");
         
         item =$(this).children(".card-body").children(".card-title").text();
+        itemValue=parseInt($(this).children(".card-body").children(".card-text").children("span").text())
         
     });
     $(".card").mouseleave(function () { 
         $(this).children(".card-img-overlay").fadeToggle("slow");
         item=''
+        itemValue=0;
         
     });
 
@@ -85,6 +111,20 @@ $(document).ready(function(){
             
         }
         
+    });
+
+    $("#search").keyup(function (e) { 
+        e.preventDefault();
+        var text=$(this).val();
+        if (text!=""){
+            $(".card").hide();
+            $(".card-columns").find('.card.'+text).show()  
+        }
+        else{
+            $(".card").show();
+
+        }
+              
     });
 
     

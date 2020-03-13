@@ -36,7 +36,7 @@ body{
 
 .navbar-nav a{
     margin-right: 50px;
-    font-size: medium;
+    
 }
 .landing-page{
     width: fit-content;
@@ -127,10 +127,11 @@ body{
     text-align: center;
     margin-top: 80px;
     letter-spacing: 8px;
-    background-color: rgba(17, 17, 17,0.87);
+    /* background-color: rgba(17, 17, 17,0.87); */
     padding: 20px;
     width: fit-content;
-    color: cornsilk;
+    color: black;
+    font-weight: bolder;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -150,5 +151,6 @@ body{
 .card-img-overlay a{
     color: cornsilk;
 }
+
 
 
