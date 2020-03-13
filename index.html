@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Filter App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap2.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      
+        
+    <div id="home">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#store">Store</a>
+            </div>
+            <div class="cart">
+                <a href="">Cart</a>
+            </div>
+        </nav>
+        <div class="landing-page">
+            <h1>Welcome To Ruru's</h1>
+        </div>
+    </div>
+    <div id="about">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link " href="#home">Home</a>
+                <a class="nav-item nav-link active" href="#about">About</a>
+                <a class="nav-item nav-link" href="#store">Store</a>
+            </div>
+            <div class="cart">
+                <a href="">Cart</a>
+            </div>
+        </nav>
+        <div class="title">
+            <h1>About Ruru</h1>
+            <h3 class="story">Ruru was founded by Ruru in 2018, it started out as one store in the middle of town and grew popular, expanded an became the brand it is now. It caters for all your confectionary needs. <br> Email us at www.ruru.store.com <br> or <br> call us at +254 715378064 </h3>
+        </div>
+        
+    </div>
+    <div id="store">
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="nav navbar-nav">
+                <a class="nav-item nav-link " href="#home">Home</a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link active" href="#store">Store</a>
+            </div>
+            <div class="cart">
+                <a href="">Cart</a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="storetitle"><h1>Ruru's Store</h1></div>
+            <div class="filtersbtns">
+                <button type="submit" id="allbtn" data-filter='all' value="all">All</button>
+                <button type="submit" id="cakesbtn" data-filter='cakes' value="cakes">Cakes</button>
+                <button type="submit" id="sweetsbtn" data-filter='sweets' value="sweets">Sweets</button>
+                <button type="submit" id="cupcakesbtn" data-filter='cupcakes' value="cupcakes">Cupcakes</button>
+                <button type="submit" id="donutsbtn" data-filter='donuts' value="donuts">Donuts</button>
+            </div>
+            <div class="filtersearch">
+                <input type="search" name="search" id="search" placeholder="Search for Item ...">
+            </div>
+
+            <div class="row">
+                
+                <div class="card-columns">
+                    <div class="card cakes">
+                        <img class="card-img-top" src="images/birthday-2901945_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Rainbow Birthday Cake</h4>
+                            <p class="card-text">Ksh 2000</p>
+                        </div>
+                    </div>
+                    <div class="card cupcakes">
+                        <img class="card-img-top" src="images/cupcake-2588646_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Carrot&Cinammon Cupcake</h4>
+                            <p class="card-text">Ksh 150</p>
+                        </div>
+                    </div>
+                    <div class="card donuts">
+                        <img class="card-img-top" src="images/donut-3448208_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Chocolate Donut</h4>
+                            <p class="card-text">Ksh 100</p>
+                        </div>
+                    </div>
+                    <div class="card cakes">
+                        <img class="card-img-top" src="images/cake-1776661_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Strawberry Cake</h4>
+                            <p class="card-text">Ksh 1200</p>
+                        </div>
+                    </div>
+                    <div class="card sweets">
+                        <img class="card-img-top" src="images/macaroons-2178371_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Macaroons</h4>
+                            <p class="card-text">Ksh 50</p>
+                        </div>
+                    </div>
+                    <div class="card cupcakes">
+                        <img class="card-img-top" src="images/cupcakes-2250367_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Vanilla Cupcakes</h4>
+                            <p class="card-text">Ksh 80</p>
+                        </div>
+                    </div>
+                    <div class="card donuts">
+                        <img class="card-img-top" src="images/donuts-4046611_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">GluttenFree Donut</h4>
+                            <p class="card-text">Ksh 120</p>
+                        </div>
+                    </div>
+                    <div class="card sweets">
+                        <img class="card-img-top" src="images/christmas-cookies-2918172_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Cookies</h4>
+                            <p class="card-text">Ksh 30</p>
+                        </div>
+                    </div>
+                    <div class="card cupcakes">
+                        <img class="card-img-top" src="images/cupcakes-690040_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Chocolate Cupcakes</h4>
+                            <p class="card-text">Ksh 100</p>
+                        </div>
+                    </div>
+                    <div class="card cakes">
+                        <img class="card-img-top" src="images/cake-1954054_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Vanilla Cake Pink Icing</h4>
+                            <p class="card-text">Ksh 1500</p>
+                        </div>
+                    </div>
+                    <div class="card donuts">
+                        <img class="card-img-top" src="images/doughnut-380212_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Choco Donut w/ Sprinkles</h4>
+                            <p class="card-text">Ksh 150</p>
+                        </div>
+                    </div>
+                    <div class="card sweets">
+                        <img class="card-img-top " src="images/dessert-352475_640.jpg" alt="">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title"><a href="" class="add-cart">Add to Cart</a></h4>
+                          </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Mini Dessert</h4>
+                            <p class="card-text">Ksh 30</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+
+    </div>
+      
+  </body>
+</html>
