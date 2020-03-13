@@ -26,7 +26,7 @@
             <a class="nav-item nav-link" href="#store">Store</a>
         </div>
         <div class="cart">
-            <a href="">Cart</a>
+            <a href="" data-toggle="modal" data-target="#modelCart">Cart (<span class="number">0</span>)</a>
         </div>
     </nav>
       
@@ -50,11 +50,13 @@
         <div class="container">
             <div class="storetitle"><h1>Ruru's Store</h1></div>
             <div class="filtersbtns">
+               <h4>
                 <button type="submit" id="allbtn" data-filter='all' value="all">All</button>
                 <button type="submit" id="cakesbtn" data-filter='cakes' value="cakes">Cakes</button>
                 <button type="submit" id="sweetsbtn" data-filter='sweets' value="sweets">Sweets</button>
                 <button type="submit" id="cupcakesbtn" data-filter='cupcakes' value="cupcakes">Cupcakes</button>
                 <button type="submit" id="donutsbtn" data-filter='donuts' value="donuts">Donuts</button>
+               </h4> 
             </div>
             <div class="filtersearch">
                 <input type="search" name="search" id="search" placeholder="Search for Item ...">
@@ -189,8 +191,32 @@
             
         </div>
         
-        
 
+    </div>
+    
+    
+    
+    <!-- Modal  for cart-->
+    <div class="modal fade" id="modelCart" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="cart-items">
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="clear" class="btn btn-primary" >Clear</button>
+                    <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+            </div>
+        </div>
     </div>
       
   </body>

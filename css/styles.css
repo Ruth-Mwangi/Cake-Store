@@ -107,8 +107,21 @@ body{
     margin-right: auto;
     margin-bottom: 50px;
 }
+.filtersearch input[type="search"]{
+    border-radius: 15px 50px;
+    width: 500px;
+    border-color: crimson;
+    
+}
+
+.cart-items li{
+    cursor: pointer;
+    list-style: decimal;
+}
 .filtersbtns button{
     margin-right: 20px;
+    border-radius: 15px 50px;
+    
 }
 .storetitle{
     text-align: center;

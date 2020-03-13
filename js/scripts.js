@@ -1,5 +1,13 @@
-
+var item;
+var noOfItems=0;
 $(document).ready(function(){
+
+    $(".card a").click(function(e){
+        e.preventDefault();
+        $(".cart-items").prepend('<li>' + item+'</li>');
+        noOfItems=noOfItems+1;
+        $(".number").text(noOfItems)
+    })
 
 
     // active class navigation
@@ -13,6 +21,16 @@ $(document).ready(function(){
         
 
     })
+    $("#clear").click(function(){
+        $(".cart-items li").remove();
+        noOfItems=0
+        $(".number").text(noOfItems)
+    });
+    $(".cart-items").on('click','li',function(){
+         $(this).remove();
+         noOfItems=noOfItems-1;
+         $(".number").text(noOfItems)
+    })
 
 
 
@@ -22,9 +40,12 @@ $(document).ready(function(){
 
         $(this).children(".card-img-overlay").fadeToggle("fast");
         
+        item =$(this).children(".card-body").children(".card-title").text();
+        
     });
     $(".card").mouseleave(function () { 
         $(this).children(".card-img-overlay").fadeToggle("slow");
+        item=''
         
     });
 
@@ -65,4 +86,6 @@ $(document).ready(function(){
         }
         
     });
+
+    
 })
