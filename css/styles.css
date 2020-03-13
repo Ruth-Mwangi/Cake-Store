@@ -5,11 +5,12 @@
 }
 body{
     font-family: 'Sue Ellen Francisco';
-    /* display: block; */
+    display: grid; 
+    
 }
 
 #home{
-    background-image: url(../images/birthday-2901945_640.jpg);
+    background-image: url(../images/bg.jpg);
     height: 800px;
     background-size: cover;
     position: relative;
@@ -41,7 +42,7 @@ body{
     width: fit-content;
     height: fit-content;
     margin: auto;
-    margin-top: 350px;
+    padding-top: 350px;
 
 }
 .landing-page h1{
@@ -49,14 +50,23 @@ body{
     top: 100%;
     text-align: center;
     letter-spacing: 8px;
-    background-color: rgba(17, 17, 17,0.67);
+    background-color: rgba(17, 17, 17,0.87);
     color: #fff;
     padding: 20px;
     
 }
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  }
+
 
 #about{
-    background-image: url(../images/birthday-2901945_640.jpg);
+    background-image: url(../images/bg.jpg);
     height: 800px;
     background-size: cover;
     position: relative;
@@ -66,7 +76,7 @@ body{
 }
 
 #store{
-    background-image: url(../images/birthday-2901945_640.jpg);
+    background-image: url(../images/bg.jpg);
     height: fit-content;
     min-height: 800px;
     background-size: cover;
@@ -80,7 +90,7 @@ body{
     text-align: center;
     margin-top: 200px;
     letter-spacing: 8px;
-    background-color: rgba(17, 17, 17,0.67);
+    background-color: rgba(17, 17, 17,0.87);
     padding: 20px;
     width: fit-content;
     color: cornsilk;
@@ -102,9 +112,9 @@ body{
 }
 .storetitle{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 80px;
     letter-spacing: 8px;
-    background-color: rgba(17, 17, 17,0.67);
+    background-color: rgba(17, 17, 17,0.87);
     padding: 20px;
     width: fit-content;
     color: cornsilk;
@@ -115,7 +125,7 @@ body{
 }
 
 .card-img-overlay{
-    background-color: rgba(17, 17, 17,0.67);
+    background-color: rgba(17, 17, 17,0.87);
     height: fit-content;
     width: fit-content;
     margin: auto;
@@ -123,6 +133,7 @@ body{
     position: absolute;
     
 }
+
 .card-img-overlay a{
     color: cornsilk;
 }
